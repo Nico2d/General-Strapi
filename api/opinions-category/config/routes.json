@@ -1,0 +1,52 @@
+{
+  "routes": [
+    {
+      "method": "GET",
+      "path": "/opinions-categories",
+      "handler": "opinions-category.find",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "GET",
+      "path": "/opinions-categories/count",
+      "handler": "opinions-category.count",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "GET",
+      "path": "/opinions-categories/:id",
+      "handler": "opinions-category.findOne",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "POST",
+      "path": "/opinions-categories",
+      "handler": "opinions-category.create",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "PUT",
+      "path": "/opinions-categories/:id",
+      "handler": "opinions-category.update",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "DELETE",
+      "path": "/opinions-categories/:id",
+      "handler": "opinions-category.delete",
+      "config": {
+        "policies": []
+      }
+    }
+  ]
+}

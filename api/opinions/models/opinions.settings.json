@@ -1,0 +1,28 @@
+{
+  "kind": "collectionType",
+  "collectionName": "opinions",
+  "info": {
+    "name": "opinions"
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true,
+    "draftAndPublish": true
+  },
+  "attributes": {
+    "users_permissions_user": {
+      "plugin": "users-permissions",
+      "model": "user",
+      "via": "opinions"
+    },
+    "opinions_category": {
+      "model": "opinions-category",
+      "via": "opinions"
+    },
+    "questions": {
+      "type": "component",
+      "repeatable": true,
+      "component": "questions.questions"
+    }
+  }
+}

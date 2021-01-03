@@ -1,0 +1,17 @@
+{
+  "kind": "collectionType",
+  "collectionName": "category_questions",
+  "info": {
+    "name": "category_questions"
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true,
+    "draftAndPublish": true
+  },
+  "attributes": {
+    "CategoryType": {
+      "type": "string"
+    }
+  }
+}

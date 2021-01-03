@@ -1,0 +1,34 @@
+{
+  "kind": "collectionType",
+  "collectionName": "lecturers",
+  "info": {
+    "name": "lecturers",
+    "description": ""
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true,
+    "draftAndPublish": true
+  },
+  "attributes": {
+    "Titles": {
+      "type": "string"
+    },
+    "Name": {
+      "type": "string"
+    },
+    "Surname": {
+      "type": "string"
+    },
+    "UniversityName": {
+      "type": "string"
+    },
+    "UniversityFaculty": {
+      "type": "string"
+    },
+    "opinions_categories": {
+      "collection": "opinions-category",
+      "via": "lecturer"
+    }
+  }
+}
