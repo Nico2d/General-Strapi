@@ -1,0 +1,49 @@
+{
+  "kind": "collectionType",
+  "collectionName": "ekogroszeks",
+  "info": {
+    "name": "Ekogroszek"
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true,
+    "draftAndPublish": true
+  },
+  "attributes": {
+    "name": {
+      "type": "string"
+    },
+    "current_price": {
+      "type": "decimal"
+    },
+    "previous_price": {
+      "type": "decimal"
+    },
+    "image": {
+      "collection": "file",
+      "via": "related",
+      "allowedTypes": [
+        "images",
+        "files",
+        "videos"
+      ],
+      "plugin": "upload",
+      "required": false
+    },
+    "description": {
+      "type": "richtext"
+    },
+    "kalorycznosc": {
+      "type": "string"
+    },
+    "ash": {
+      "type": "string"
+    },
+    "siarka": {
+      "type": "string"
+    },
+    "wilgotnosc": {
+      "type": "string"
+    }
+  }
+}

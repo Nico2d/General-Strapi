@@ -1,0 +1,52 @@
+{
+  "routes": [
+    {
+      "method": "GET",
+      "path": "/ekogroszeks",
+      "handler": "ekogroszek.find",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "GET",
+      "path": "/ekogroszeks/count",
+      "handler": "ekogroszek.count",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "GET",
+      "path": "/ekogroszeks/:id",
+      "handler": "ekogroszek.findOne",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "POST",
+      "path": "/ekogroszeks",
+      "handler": "ekogroszek.create",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "PUT",
+      "path": "/ekogroszeks/:id",
+      "handler": "ekogroszek.update",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "DELETE",
+      "path": "/ekogroszeks/:id",
+      "handler": "ekogroszek.delete",
+      "config": {
+        "policies": []
+      }
+    }
+  ]
+}
