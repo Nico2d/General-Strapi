@@ -1,0 +1,52 @@
+{
+  "routes": [
+    {
+      "method": "GET",
+      "path": "/dc-users",
+      "handler": "dc-user.find",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "GET",
+      "path": "/dc-users/count",
+      "handler": "dc-user.count",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "GET",
+      "path": "/dc-users/:id",
+      "handler": "dc-user.findOne",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "POST",
+      "path": "/dc-users",
+      "handler": "dc-user.create",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "PUT",
+      "path": "/dc-users/:id",
+      "handler": "dc-user.update",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "DELETE",
+      "path": "/dc-users/:id",
+      "handler": "dc-user.delete",
+      "config": {
+        "policies": []
+      }
+    }
+  ]
+}

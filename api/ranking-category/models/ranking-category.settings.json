@@ -1,0 +1,25 @@
+{
+  "kind": "collectionType",
+  "collectionName": "ranking_categories",
+  "info": {
+    "name": "RankingCategory",
+    "description": ""
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true,
+    "draftAndPublish": true
+  },
+  "attributes": {
+    "categoryName": {
+      "type": "string"
+    },
+    "ranking_opinions": {
+      "collection": "ranking-opinion",
+      "via": "ranking_category"
+    },
+    "CategoryText": {
+      "type": "string"
+    }
+  }
+}

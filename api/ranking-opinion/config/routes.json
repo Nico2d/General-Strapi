@@ -1,0 +1,52 @@
+{
+  "routes": [
+    {
+      "method": "GET",
+      "path": "/ranking-opinions",
+      "handler": "ranking-opinion.find",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "GET",
+      "path": "/ranking-opinions/count",
+      "handler": "ranking-opinion.count",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "GET",
+      "path": "/ranking-opinions/:id",
+      "handler": "ranking-opinion.findOne",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "POST",
+      "path": "/ranking-opinions",
+      "handler": "ranking-opinion.create",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "PUT",
+      "path": "/ranking-opinions/:id",
+      "handler": "ranking-opinion.update",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "DELETE",
+      "path": "/ranking-opinions/:id",
+      "handler": "ranking-opinion.delete",
+      "config": {
+        "policies": []
+      }
+    }
+  ]
+}
