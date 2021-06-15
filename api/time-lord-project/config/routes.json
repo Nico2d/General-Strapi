@@ -2,48 +2,48 @@
   "routes": [
     {
       "method": "GET",
-      "path": "/ranking-opinions",
-      "handler": "ranking-opinion.find",
+      "path": "/time-lord-projects",
+      "handler": "time-lord-project.find",
       "config": {
         "policies": []
       }
     },
     {
       "method": "GET",
-      "path": "/ranking-opinions/count",
-      "handler": "ranking-opinion.count",
+      "path": "/time-lord-projects/count",
+      "handler": "time-lord-project.count",
       "config": {
         "policies": []
       }
     },
     {
       "method": "GET",
-      "path": "/ranking-opinions/:id",
-      "handler": "ranking-opinion.findOne",
+      "path": "/time-lord-projects/:id",
+      "handler": "time-lord-project.findOne",
       "config": {
         "policies": []
       }
     },
     {
       "method": "POST",
-      "path": "/ranking-opinions",
-      "handler": "ranking-opinion.create",
+      "path": "/time-lord-projects",
+      "handler": "time-lord-project.create",
       "config": {
         "policies": []
       }
     },
     {
       "method": "PUT",
-      "path": "/ranking-opinions/:id",
-      "handler": "ranking-opinion.update",
+      "path": "/time-lord-projects/:id",
+      "handler": "time-lord-project.update",
       "config": {
         "policies": []
       }
     },
     {
       "method": "DELETE",
-      "path": "/ranking-opinions/:id",
-      "handler": "ranking-opinion.delete",
+      "path": "/time-lord-projects/:id",
+      "handler": "time-lord-project.delete",
       "config": {
         "policies": []
       }

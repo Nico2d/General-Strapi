@@ -1,8 +1,8 @@
 {
   "kind": "collectionType",
-  "collectionName": "ranking_categories",
+  "collectionName": "time_lord_tasks",
   "info": {
-    "name": "RankingCategory",
+    "name": "TimeLord_Task",
     "description": ""
   },
   "options": {
@@ -11,15 +11,17 @@
     "draftAndPublish": true
   },
   "attributes": {
-    "categoryName": {
+    "name": {
       "type": "string"
     },
-    "ranking_opinions": {
-      "collection": "ranking-opinion",
-      "via": "ranking_category"
-    },
-    "CategoryText": {
+    "category": {
       "type": "string"
+    },
+    "isComplete": {
+      "type": "boolean"
+    },
+    "time": {
+      "type": "time"
     }
   }
 }

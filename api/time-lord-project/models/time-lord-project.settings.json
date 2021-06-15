@@ -1,0 +1,26 @@
+{
+  "kind": "collectionType",
+  "collectionName": "time_lord_projects",
+  "info": {
+    "name": "TimeLord_Project",
+    "description": ""
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true,
+    "draftAndPublish": true
+  },
+  "attributes": {
+    "name": {
+      "type": "string"
+    },
+    "time_lord_tasks": {
+      "collection": "time-lord-task"
+    },
+    "time_lord_users": {
+      "via": "time_lord_projects",
+      "collection": "time-lord-user",
+      "dominant": true
+    }
+  }
+}

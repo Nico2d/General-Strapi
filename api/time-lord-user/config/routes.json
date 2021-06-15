@@ -2,48 +2,48 @@
   "routes": [
     {
       "method": "GET",
-      "path": "/dc-users",
-      "handler": "dc-user.find",
+      "path": "/time-lord-users",
+      "handler": "time-lord-user.find",
       "config": {
         "policies": []
       }
     },
     {
       "method": "GET",
-      "path": "/dc-users/count",
-      "handler": "dc-user.count",
+      "path": "/time-lord-users/count",
+      "handler": "time-lord-user.count",
       "config": {
         "policies": []
       }
     },
     {
       "method": "GET",
-      "path": "/dc-users/:id",
-      "handler": "dc-user.findOne",
+      "path": "/time-lord-users/:id",
+      "handler": "time-lord-user.findOne",
       "config": {
         "policies": []
       }
     },
     {
       "method": "POST",
-      "path": "/dc-users",
-      "handler": "dc-user.create",
+      "path": "/time-lord-users",
+      "handler": "time-lord-user.create",
       "config": {
         "policies": []
       }
     },
     {
       "method": "PUT",
-      "path": "/dc-users/:id",
-      "handler": "dc-user.update",
+      "path": "/time-lord-users/:id",
+      "handler": "time-lord-user.update",
       "config": {
         "policies": []
       }
     },
     {
       "method": "DELETE",
-      "path": "/dc-users/:id",
-      "handler": "dc-user.delete",
+      "path": "/time-lord-users/:id",
+      "handler": "time-lord-user.delete",
       "config": {
         "policies": []
       }
