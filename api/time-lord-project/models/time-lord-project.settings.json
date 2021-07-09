@@ -8,19 +8,41 @@
   "options": {
     "increments": true,
     "timestamps": true,
-    "draftAndPublish": true
+    "draftAndPublish": false
   },
   "attributes": {
     "name": {
       "type": "string"
     },
     "time_lord_tasks": {
+      "via": "time_lord_project",
       "collection": "time-lord-task"
     },
-    "time_lord_users": {
+    "users_permissions_users": {
+      "plugin": "users-permissions",
+      "collection": "user",
       "via": "time_lord_projects",
-      "collection": "time-lord-user",
       "dominant": true
+    },
+    "icon_name": {
+      "type": "string"
+    },
+    "status": {
+      "type": "enumeration",
+      "enum": [
+        "finished",
+        "dropped",
+        "development",
+        "planned"
+      ]
+    },
+    "slug": {
+      "type": "uid",
+      "targetField": "name",
+      "required": true
+    },
+    "categories": {
+      "type": "json"
     }
   }
 }

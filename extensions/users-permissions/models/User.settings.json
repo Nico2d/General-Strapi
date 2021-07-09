@@ -62,6 +62,10 @@
     "opinions": {
       "via": "users_permissions_user",
       "collection": "opinions"
+    },
+    "time_lord_projects": {
+      "via": "users_permissions_users",
+      "collection": "time-lord-project"
     }
   }
 }

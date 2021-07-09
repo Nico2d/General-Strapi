@@ -8,15 +8,11 @@
   "options": {
     "increments": true,
     "timestamps": true,
-    "draftAndPublish": true
+    "draftAndPublish": false
   },
   "attributes": {
     "username": {
       "type": "string"
-    },
-    "time_lord_projects": {
-      "via": "time_lord_users",
-      "collection": "time-lord-project"
     },
     "avatar": {
       "model": "file",

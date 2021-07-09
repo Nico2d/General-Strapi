@@ -8,7 +8,7 @@
   "options": {
     "increments": true,
     "timestamps": true,
-    "draftAndPublish": true
+    "draftAndPublish": false
   },
   "attributes": {
     "name": {
@@ -17,11 +17,16 @@
     "category": {
       "type": "string"
     },
-    "isComplete": {
+    "isCompleted": {
       "type": "boolean"
     },
     "time": {
-      "type": "time"
+      "type": "time",
+      "default": "00:00:00"
+    },
+    "time_lord_project": {
+      "via": "time_lord_tasks",
+      "model": "time-lord-project"
     }
   }
 }
