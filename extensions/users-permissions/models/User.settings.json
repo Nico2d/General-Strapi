@@ -66,6 +66,16 @@
     "time_lord_projects": {
       "via": "users_permissions_users",
       "collection": "time-lord-project"
+    },
+    "avatar": {
+      "model": "file",
+      "via": "related",
+      "allowedTypes": [
+        "images"
+      ],
+      "plugin": "upload",
+      "required": false,
+      "pluginOptions": {}
     }
   }
 }

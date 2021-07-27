@@ -11,9 +11,9 @@
   },
   "attributes": {
     "users_permissions_user": {
+      "via": "opinions",
       "plugin": "users-permissions",
-      "model": "user",
-      "via": "opinions"
+      "model": "user"
     },
     "opinions_category": {
       "model": "opinions-category",

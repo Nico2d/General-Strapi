@@ -19,9 +19,9 @@
       "collection": "time-lord-task"
     },
     "users_permissions_users": {
+      "via": "time_lord_projects",
       "plugin": "users-permissions",
       "collection": "user",
-      "via": "time_lord_projects",
       "dominant": true
     },
     "icon_name": {
