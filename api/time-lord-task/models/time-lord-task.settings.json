@@ -27,6 +27,9 @@
     "time_lord_project": {
       "via": "time_lord_tasks",
       "model": "time-lord-project"
+    },
+    "description": {
+      "type": "richtext"
     }
   }
 }

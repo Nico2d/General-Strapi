@@ -1,0 +1,52 @@
+{
+  "routes": [
+    {
+      "method": "GET",
+      "path": "/time-lord-user-dailies",
+      "handler": "time-lord-user-daily.find",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "GET",
+      "path": "/time-lord-user-dailies/count",
+      "handler": "time-lord-user-daily.count",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "GET",
+      "path": "/time-lord-user-dailies/:id",
+      "handler": "time-lord-user-daily.findOne",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "POST",
+      "path": "/time-lord-user-dailies",
+      "handler": "time-lord-user-daily.create",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "PUT",
+      "path": "/time-lord-user-dailies/:id",
+      "handler": "time-lord-user-daily.update",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "DELETE",
+      "path": "/time-lord-user-dailies/:id",
+      "handler": "time-lord-user-daily.delete",
+      "config": {
+        "policies": []
+      }
+    }
+  ]
+}

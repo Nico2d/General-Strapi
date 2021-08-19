@@ -1,0 +1,21 @@
+{
+  "kind": "collectionType",
+  "collectionName": "time_lord_user_dailies",
+  "info": {
+    "name": "TimeLord_UserDaily"
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true,
+    "draftAndPublish": true
+  },
+  "attributes": {
+    "date": {
+      "type": "date",
+      "unique": false
+    },
+    "dailyTimer": {
+      "type": "integer"
+    }
+  }
+}
