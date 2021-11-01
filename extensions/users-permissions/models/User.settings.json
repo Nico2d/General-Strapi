@@ -76,6 +76,10 @@
       "plugin": "upload",
       "required": false,
       "pluginOptions": {}
+    },
+    "time_lord_user_dailies": {
+      "collection": "time-lord-user-daily",
+      "via": "user"
     }
   }
 }

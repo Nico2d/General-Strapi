@@ -2,7 +2,8 @@
   "kind": "collectionType",
   "collectionName": "time_lord_user_dailies",
   "info": {
-    "name": "TimeLord_UserDaily"
+    "name": "TimeLord_UserDaily",
+    "description": ""
   },
   "options": {
     "increments": true,
@@ -12,10 +13,17 @@
   "attributes": {
     "date": {
       "type": "date",
-      "unique": false
+      "unique": false,
+      "required": true
     },
     "dailyTimer": {
-      "type": "integer"
+      "type": "integer",
+      "required": true
+    },
+    "user": {
+      "via": "time_lord_user_dailies",
+      "plugin": "users-permissions",
+      "model": "user"
     }
   }
 }

@@ -35,7 +35,7 @@
     {
       "method": "PUT",
       "path": "/time-lord-tasks/:id",
-      "handler": "time-lord-task.update",
+      "handler": "time-lord-task.updateTaskAndUserDaily",
       "config": {
         "policies": []
       }

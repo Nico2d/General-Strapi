@@ -3,7 +3,15 @@
     {
       "method": "GET",
       "path": "/time-lord-user-dailies",
-      "handler": "time-lord-user-daily.find",
+      "handler": "time-lord-user-daily.findOneByDate",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "GET",
+      "path": "/time-lord-user-dailies/:date",
+      "handler": "time-lord-user-daily.findOneByDate",
       "config": {
         "policies": []
       }
@@ -12,14 +20,6 @@
       "method": "GET",
       "path": "/time-lord-user-dailies/count",
       "handler": "time-lord-user-daily.count",
-      "config": {
-        "policies": []
-      }
-    },
-    {
-      "method": "GET",
-      "path": "/time-lord-user-dailies/:id",
-      "handler": "time-lord-user-daily.findOne",
       "config": {
         "policies": []
       }
